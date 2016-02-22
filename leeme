@@ -35,6 +35,7 @@ Debug ip nat: Muestra la lista de acciones en el proceso NAT para depuracion (En
 lo que falla)
 Show Ip nat translations: es un comando bastante util, ya que nos muestra toda la informacion de las ramas interior y exterior.
 Show Ip nat stat: Estadisticas de fallo de paquetes, suele tener menos salero que los anteriores comandos.
+Show running-config: muestra toda la configuracion del router para depuracion
 
 HERRAMIENTAS A USAR (en cfg terminal)
 
