@@ -1,7 +1,5 @@
 #Estas lineas no son necesarias para la configuracion, pero si que ayudan en la organizacion de la red
 
-ESTATICO
-
 enable
 configure terminal
 #hostname [nombre_del_router]
@@ -14,20 +12,7 @@ interface [exterior de red local, hacia internet]
 ip nat outside
 end
 
-DINAMICO
 
-enable
-configure terminal
-#hostname [nombre_del_router]
-access-list [numero de 1-99] permit [subred] [wildcard de subred]
-ip nat pool name [nombre de la pool] [primera direccion] [ultima direccion] netmask [mascara de red comun de ambas direcciones]
-ip nat inside source list [numero de la ACL] pool [nombre de la pool] overload
-interface [interior de red local]
-ip nat inside
-exit
-interface [exterior de red local, hacia internet]
-ip nat outside
-end
 
 
 
